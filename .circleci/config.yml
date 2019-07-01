@@ -43,7 +43,7 @@ jobs:
           command: npm run ftp-deploy
 
 workflows:
-  version: 2
+  version: 2.1
   build-deploy:
     jobs:
       - build:
