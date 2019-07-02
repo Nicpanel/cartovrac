@@ -42,19 +42,19 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-    - build:
-        filters:
-          branches:
-            only: master
+    - build
+#        filters:
+#          branches:
+#            only: master
     - deploy:
         requires:
         - build
-        filters:
-          branches:
-            only: master
-    triggers:
-    - schedule:
-        cron: 0 1,7,13,18 * * *
-        filters:
-          branches:
-            only: master
+#        filters:
+#          branches:
+#            only: master
+#    triggers:
+#    - schedule:
+#        cron: 0 1,7,13,18 * * *
+#        filters:
+#          branches:
+#            only: master
