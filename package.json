@@ -24,6 +24,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "ftp": "^0.3.10",
+    "ftp-deploy": "^2.3.3",
     "glob": "^7.1.4",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
