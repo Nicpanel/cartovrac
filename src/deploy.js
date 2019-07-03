@@ -14,7 +14,7 @@ const config = {
   localRoot: './dist',
   remoteRoot: '.',
   include: ['*', '**/*'],
-  deleteRemote: false,
+  deleteRemote: true,
   forcePasv: true
 };
 

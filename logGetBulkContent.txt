@@ -1,11 +1,11 @@
---2019-07-04 00:05:39--  https://www.overpass-api.de/api/interpreter?data=[out:json][timeout:500][maxsize:20737418];(area[%22ISO3166-1%22~%22SE%22];)-%3E.fr;(node[%22bulk_purchase%22~%22yes%7Conly%22](area.fr);way[%22bulk_purchase%22~%22yes%7Conly%22](area.fr););out%20center;
-Resolving www.overpass-api.de (www.overpass-api.de)... 178.63.48.217, 178.63.11.215, 2a01:4f8:120:6464::2, ...
-Connecting to www.overpass-api.de (www.overpass-api.de)|178.63.48.217|:443... connected.
+--2019-07-04 00:18:24--  https://www.overpass-api.de/api/interpreter?data=[out:json][timeout:500][maxsize:20737418];(area[%22ISO3166-1%22~%22SE%22];)-%3E.fr;(node[%22bulk_purchase%22~%22yes%7Conly%22](area.fr);way[%22bulk_purchase%22~%22yes%7Conly%22](area.fr););out%20center;
+Resolving www.overpass-api.de (www.overpass-api.de)... 178.63.11.215, 178.63.48.217, 2a01:4f8:120:6464::2, ...
+Connecting to www.overpass-api.de (www.overpass-api.de)|178.63.11.215|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/json]
 Saving to: ‘cache_bulk_data.json’
 
-     0K ....                                                   1.08M=0.004s
+     0K ....                                                   1.91M=0.002s
 
-2019-07-04 00:05:41 (1.08 MB/s) - ‘cache_bulk_data.json’ saved [4370]
+2019-07-04 00:18:40 (1.91 MB/s) - ‘cache_bulk_data.json’ saved [4370]
 
