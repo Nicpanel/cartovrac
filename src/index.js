@@ -27,6 +27,9 @@ function checkEmbbededMode() {
 	}
 }
 
+
+$('body').addClass("embedded");
+
 /**
  * Create a map configuration based on default configuration and GET parameters
  */

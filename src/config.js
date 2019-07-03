@@ -4,6 +4,8 @@ export const minBoundW = -180;
 export const maxBoundN = 90;
 export const maxBoundE = 180;
 
+export const mode = "embedded";
+
 // Map definition
 export const maxZoom = 21;
 export const minZoom = 3;

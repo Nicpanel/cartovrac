@@ -68,9 +68,9 @@ function showUserLocationButton(map) {
 			alert("Vous devez activer la géolocalisation sur votre navigateur pour afficher votre position (généralement à gauche de la barre d'adresse).")
 		},
 		strings: {
-			title: "Montrer ma position",
-			popup: "Votre position",
-			outsideMapBoundsMsg: "Votre position se trouve en dehors de la zone gérée par CartoVrac pour le moment."
+			title: "Show my position",
+			popup: "Your position",
+			outsideMapBoundsMsg: "Your position is out of Sweden at the moment."
 		}
 	}).addTo(map);
 }
