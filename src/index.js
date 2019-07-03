@@ -1,4 +1,4 @@
-import './menu.js';
+//import './menu.js';
 
 import 'typeface-roboto';
 
