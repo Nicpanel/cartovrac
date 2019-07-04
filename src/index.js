@@ -27,7 +27,7 @@ function checkEmbbededMode() {
 	}
 }
 
-
+/**
 $('body').addClass("embedded");
 
 /**
