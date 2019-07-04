@@ -20,7 +20,7 @@ a:hover {
 h1, h2, h3 {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 600;
-  color: #32CD32;
+  color: #42bc90;
 }
 
 h2 {
@@ -129,7 +129,7 @@ h2 {
 
 #content a {
   text-decoration: none;
-  color: #32CD32;
+  color: #42bc90;
   transition: color 0.3s ease;
 }
 
@@ -159,7 +159,7 @@ h2 {
   padding: 10px;
   border-radius: 16px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  background-color: #32CD32;
+  background-color: #42bc90;
   color: #ffffff;
   background-image: url("../img/add.png");
   background-size: 45px;
