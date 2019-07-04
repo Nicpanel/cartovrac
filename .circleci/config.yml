@@ -43,18 +43,18 @@ workflows:
   build-deploy:
     jobs:
     - build
-#        filters:
-#          branches:
-#            only: master
+        filters:
+          branches:
+            only: master
     - deploy:
         requires:
         - build
-#        filters:
-#          branches:
-#            only: master
+        filters:
+          branches:
+            only: master
     triggers:
     - schedule:
         cron: "0 1,7,13,18,19 * * *"
-#        filters:
-#          branches:
-#            only: master
+        filters:
+          branches:
+            only: master
