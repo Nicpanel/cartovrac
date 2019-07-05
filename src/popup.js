@@ -44,11 +44,11 @@ export function getHtmlFormattedShopTitle(category, organicTag, bulk_purchaseTag
     // Add different suffix depending if it's a shop selling some bulk products or mainly bulk products
     if (category.addBulkSuffix) {
 	    if (bulk_purchaseTag == "only") {
-	        title += ' 100% bulk';
+	        title += ', 100% bulk';
 	    } else if (bulk_purchaseTag == "yes"){
-	        title += ' with bilk aisle';
+	        title += ', with bulk aisle';
 	    } else {
-	        title += ' containers accepted';
+	        title += ', containers accepted';
 	    }
 	}
 
