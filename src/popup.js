@@ -44,26 +44,26 @@ export function getHtmlFormattedShopTitle(category, organicTag, bulk_purchaseTag
     // Add different suffix depending if it's a shop selling some bulk products or mainly bulk products
     if (category.addBulkSuffix) {
 	    if (bulk_purchaseTag == "only") {
-	        title += ' 100% vrac';
+	        title += ' 100% bulk';
 	    } else if (bulk_purchaseTag == "yes"){
-	        title += ' avec rayon vrac';
+	        title += ' with bilk aisle';
 	    } else {
-	        title += ' acceptant vos contenants';
+	        title += ' containers accepted';
 	    }
 	}
 
     // Add annotation if products are organics
     if (category.addOrganicSuffix) {
 	    if (organicTag == "yes") {
-	    	title += ', avec des produits bio.';
+	    	title += ', with organic products.';
 	    } else if (organicTag == "only") {
-	        title += ', 100% bio.';
+	        title += ', 100% organic.';
 	    }
 	}
 
     // Add drive annotation
     if (driveTag == "yes") {
-        title += '<br />Propose un service en ligne avec retrait en magasin.<br />';
+        title += '<br />Online service with in-store pickup.<br />';
     }
 
     return '<i>' + title + '</i><br />';
@@ -72,14 +72,14 @@ export function getHtmlFormattedShopTitle(category, organicTag, bulk_purchaseTag
  * Transform OpenStreetMap hours into french readable hours
  **/
 function getReadableHours(opening_hours){
-    return opening_hours.replace("Mo", "Lundi")
-        .replace("Tu", "Mardi")
-        .replace("We", "Mercredi")
-        .replace("Th", "Jeudi")
-        .replace("Fr", "Vendredi")
-        .replace("Sa", "Samedi")
-        .replace("Su", "Dimanche")
-        .replace("off", "fermé")
+    return opening_hours.replace("Mo", "Mo")
+        .replace("Tu", "Tu")
+        .replace("We", "We")
+        .replace("Th", "Th")
+        .replace("Fr", "Fr")
+        .replace("Sa", "Sa")
+        .replace("Su", "Su")
+        .replace("off", "closed")
         .replace(",", " & ");
 }
 /**
@@ -100,7 +100,7 @@ function getHtmlFormattedWebsite(website, contact_website, facebook, contact_fac
         return "";
     }
 
-    return '<a href="' + url + '" target="_blank">Site web</a><br />';
+    return '<a href="' + url + '" target="_blank">Website</a><br />';
 }
 
 /**
@@ -111,7 +111,7 @@ function getHtmlFormattedHours(opening_hours) {
     if (!opening_hours) {
         return hours;
     }
-    hours += '<b>Horaires</b><br />';
+    hours += '<b>Opening hours</b><br />';
     var hoursSplit = opening_hours.split('; ');
     for (var hoursIndex in hoursSplit) {
         hours += getReadableHours(hoursSplit[hoursIndex]) + '<br />';
@@ -155,8 +155,8 @@ function getHtmlFormattedContribution(elementId, isAWay) {
     }
 
     var contributionHtml =  '<hr style="padding-bottom: ;padding-bottom: 0px;" size="1">';
-    contributionHtml += '<a href="'+baseUrl+elementId+'" target="_blank" title="Modifier' +
-    ' les informations sur OpenStreetMap. Elles seront mises à jour sur CartoVrac dans ' +
-    'les 24h suivant la modification.">Modifier ces informations</a>';
+    contributionHtml += '<a href="'+baseUrl+elementId+'" target="_blank" title="Edit' +
+    ' information on OpenStreetMap. They map will be updated shortly after ' +
+    '(if not, let us know).">Edit information</a>';
     return contributionHtml;
 }
